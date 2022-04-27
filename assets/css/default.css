@@ -69,17 +69,14 @@ button {
 .custom-btn a:hover {
     background: var(--cxc);
 }
-.custom-btn.white-custom{
-    background: var(--wc);
-    border: 1px solid var(--sc);
-    color: var(--sc);
-}
-.section-title h2 {
-    font-size: 50px;
-    line-height: 52px;
-    font-weight: 600px;
-    color: var(--sc);
+.view-btn a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--wc);
     text-transform: capitalize;
+    padding: 10px 35px;
+    background: var(--cgc);
 }
 
 .section-title h6 {
