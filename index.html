@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | toletbook</title>
+    <!--    GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--    BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--    FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--    SLICK SLIDER-->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!--    HEADER SECTION-->
+    <header class="d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <div class="logo d-flex justify-content-between align-items-center">
+                        <a href="#">
+                            <img src="assets/img/logo/logo.png" alt="Logo">
+                        </a>
+                        <i class="fa fa-bars d-md-none" onClick="mobileClick()" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-8 d-none d-md-block">
+                    <div class="menubar">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">All Tolets</a></li>
+                            <li><a href="#">Verified Partner</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Create Listing</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li class="nav-item dropdown login-dropdown">
+                                <a class="nav-link login-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <span> Accounts &nbsp;<i class="fas fa-chevron-down"></i> </span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="">Log In</a>
+                                    <a class="dropdown-item" href="">Renter Registration</a>
+                                    <a class="dropdown-item" href="">Owner Registration</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-5">
+                <a href="#">
+                    <img src="assets/img/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Home
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            About
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Services
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>services</a></li>
+
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>sector</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--   END MOBILE MENU-->
+
+    <!-- BANNER SECTION -->
+    <section class="banner">
+        <div class="overlay pb-lg-5">
+            <div class="container text-center">
+                <div class="banner-content mx-lg-5 px-lg-5">
+                    <h1 class="px-lg-5 mb-4">Find the <strong class="">Home Rent</strong>, Forget the Mental Stress </h1>
+                    <div class="search-bar mb-5">
+                        <form action="#" method="post" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                            <select class="search-slt" name="">
+                                                <option>Select Home Location</option>
+                                                <option>Mohakhali</option>
+                                                <option>Dhanmondi</option>
+                                                <option>Mirpur</option>
+                                                <option>Ariport</option>
+                                                <option>Uttara</option>
+                                                <option>Jatrabari</option>
+                                                <option>Farmghet</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                            <select class="search-slt" name="">
+                                                <option>Select Category</option>
+                                                <option>Appartment</option>
+                                                <option>Category Name</option>
+                                                <option>Category Name</option>
+                                                <option>Category Name</option>
+                                                <option>Category Name</option>
+                                                <option>Category Name</option>
+                                                <option>Category Name</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                                            <input type="number" class="search-slt" placeholder="Type Home ID" name="">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                                            <input type="text" class="search-slt last-input" placeholder="Phone Number"
+                                                name="">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                                            <a href="search_result.html">
+                                                <button type="button" class="wrn-btn">Find Home</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION -->
+
+    <!-- EXPLORE VERIFIED PARTNER START -->
+    <section class="property-section py-5">
+        <div class="container">
+            <div class="header">
+                <h3 class="text-center pb-4">Explore Verified Partner</h3>
+            </div>
+            <div class="row my-lg-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img1.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Kolamoti Bhobon</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">Show Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img2.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Kolamoti Bhobon</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">Show Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img3.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Kolamoti Bhobon</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">Show Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img4.jpg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Kolamoti Bhobon</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">Show Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EXPLORE VERIFIED PARTNER END -->
+
+    <!-- ONLAY VERIFIED PROPERTY START -->
+    <section class="property-section pb-5">
+        <div class="container">
+            <div class="header">
+                <h3 class="text-center pb-4">Only Verified Property</h3>
+            </div>
+            <div class="row my-lg-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img5.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Property Name Here</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img6.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Property Name Here</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img3.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Property Name Here</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img2.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Property Name Here</a>
+                            </h4>
+                            <h6 class="">Dhanmondi 15 Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ONLAY CERIFIED PROPERTY END -->
+
+    <!-- EXPLORE RECENT TOLETS START -->
+    <section class="property-section pb-5">
+        <div class="container">
+            <div class="header">
+                <h3 class="text-center pb-4">Explore Recent Tolets</h3>
+            </div>
+            <div class="row my-lg-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img5.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Tolets Name</a>
+                            </h4>
+                            <h6 class="">Mohakhali, Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img1.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Tolets Name</a>
+                            </h4>
+                            <h6 class="">Mohakhali, Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img5.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Tolets Name</a>
+                            </h4>
+                            <h6 class="">Mohakhali, Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card property">
+                        <img src="assets/img/properties/img6.jpeg" class="card-img-top" alt="property-img">
+                        <div class="card-body text-center">
+                            <h4 class="pt-2">
+                                <a href="">Tolets Name</a>
+                            </h4>
+                            <h6 class="">Mohakhali, Dhaka Bangladesh<h6>
+                            <p><strong>Bedroom: 2 | Bathroom: 2 | Rent: Available</strong></p>
+                            <div class="view-more mt-4 mb-4">
+                                <a class="view-more text-end" href="#">
+                                    Show Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-btn text-center mt-5">
+                    <a href="#">
+                        View All Properties <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EXPLORE RECENT TOLETS PARTNER END -->
+
+    <section class="service-part py-5">
+        <div class="container">
+            <div class="service-header text-center">
+                <h3 class="">Our All Services</h3>
+                <h5>For Any Services</h5>
+                <h6><i class="fa-solid fa-phone-volume"></i> 01234567899</h6>
+            </div>
+        </div>
+    </section>
+
+    <!--    FOOTER SECTION-->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <img src="assets/img/logo/logo.png" alt="Logo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque beatae delectus vero quod hic neque, maiores nostrum enim accusamus pariatur.
+                        </p>
+                        <div class="social-media-footer">
+                            <h4>Social Media</h4>
+                            <div>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>Importent Link</h6>
+
+                        <div class="footer-menu">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Our FAQ</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Help & Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>Menu Link</h6>
+
+                        <div class="footer-menu">
+                            <a href="#">Home Page</a>
+                            <a href="#">Our Properties</a>
+                            <a href="#">Varified Property</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Registration Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>About Us</h6>
+                        <p>
+                            ToletBook is Home rental Platform
+                            And Corporate Comapany
+                            Mohakhali XXXX Towers - Office No.
+                            6 - Floor 1 - Dhaka
+                        </p>
+                        <ul>
+                            <li>
+                                Phone: +88 01234567899
+                            </li>
+                            <li>
+                                Email: info@toletbook.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-bottom">
+        <div class="copyright-section">
+            <p>@Copyright-2022. All rights reserved ToletBook ltd</p>
+        </div>
+    </section>
+    <!--    FOOTER SECTION END-->
+
+
+
+    <!--    JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--    SLICK SLIDER-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--    BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

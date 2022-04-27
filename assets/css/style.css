@@ -1,0 +1,468 @@
+@import "default.css";
+
+
+/*HEADER*/
+header {
+    height: 80px;
+    background: #ffffff;
+    transition: .4s;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.logo i {
+    font-size: 22px;
+    padding: 8px;
+    padding-right: 0;
+    transition: .2s;
+}
+
+.logo i:hover {
+    color: var(--sc);
+    cursor: pointer;
+}
+
+.menubar ul {
+    text-align: right;
+}
+
+.menubar ul li {
+    display: inline-block;
+}
+
+.menubar ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 35px;
+    padding: 7px 12px;
+    color: var(--cgc);
+    transition: 0.4s;
+}
+.menubar ul li a:hover{
+    color: var(--cxc);
+}
+.menubar .login-menu {
+    background: linear-gradient(102.92deg, #1B1285 -36.3%, #643088 100%);
+    color: var(--wc);
+    border-radius: 5px;
+}
+
+/*HEADER*/
+
+/*MOBILE MENU*/
+
+/*ACCORDION CUSTOM*/
+.mobile-logo img {
+    width: 150px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.mobile-logo i {
+    font-size: 20px;
+    float: right;
+    margin: 5px 20px;
+    color: var(--cgc);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-logo i:hover {
+    color: var(--sc);
+}
+
+.custom.accordion-button {
+    text-transform: capitalize;
+    font-size: 15px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: var(--cgc);
+    font-weight: 400;
+}
+
+.custom.accordion-button:hover {
+    color: var(--sc);
+}
+
+.custom.accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #ccc;
+
+}
+
+.custom.accordion-button:not(.collapsed) {
+    color: var(--sc);
+    background: var(--rc);
+    -webkit-transform: none;
+    transform: none;
+    font-weight: 400;
+}
+
+.custom.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\f068";
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+.none.accordion-button:not(.collapsed)::after {
+    content: none;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+
+.custom.accordion-button::after {
+    background-image: none;
+    content: "\f067";
+    font-family: 'FontAwesome';
+}
+
+.none.accordion-button::after {
+    content: none;
+}
+
+.custom.accordion-body {
+    padding: 0 0px;
+}
+
+.custom.accordion-body ul {
+    padding: 0;
+    margin: 0;
+}
+
+.custom.accordion-body ul li {
+    list-style: none;
+    padding: 8px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.custom.accordion-body ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--cgc);
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.custom.accordion-body ul li a i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.custom.accordion-body ul li:hover {
+    color: var(--wc);
+    background: var(--rc);
+}
+
+.custom.accordion-body ul li:hover a {
+    color: var(--sc);
+}
+
+.custom.accordion-item a {
+    text-decoration: none;
+
+}
+
+
+.accordion-button.custom i {
+    padding: 0 10px;
+}
+
+/*ACCORDION CUSTOM END*/
+
+.mobile-menu {
+    width: 350px;
+    position: fixed;
+    left: -380px;
+    top: 0;
+    z-index: 2;
+    background: var(--wc);
+    height: 100%;
+    overflow: auto;
+    transition: .4s;
+    padding: 10px 0;
+}
+#mobileOverlay {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(101, 41, 145, 0.71);
+    z-index: 1;
+    cursor: pointer;
+}
+.mobileAdd {
+    left: 0 !important;
+}
+.mobile-overlay {
+    position: inherit !important;
+}
+/*MOBILE MENU END*/
+
+/* BANNER PART CSS */
+.banner {
+    background-image: url(../img/photos/bnr-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background-color: #892dc2a3;
+}
+
+.banner-content {
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.banner-content h1 {
+    padding: 0px 20px;
+    color: var(--wc);
+}
+
+/* search bar */
+.search-bar {
+    padding: 12px 30px;
+    background: var(--wc);
+    border-radius: 10px;
+}
+
+.search-slt {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cgc);
+    line-height: 18px;
+    border: none;
+    border-right: 1.5px solid var(--bgc);
+    background-color: var(--wc);
+    background-image: none;
+    height: calc(3rem + 0px) !important;
+    border-radius: 0;
+    outline: none;
+    padding-left: 10px;
+}
+
+.last-input {
+    border-right: none;
+}
+
+.search-slt::placeholder {
+    color: var(--bgc);
+}
+
+.wrn-btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius: 0;
+}
+
+.search-bar button {
+    background: var(--cxc);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--wc);
+}
+
+/* BANNER PART CSS */
+
+/* EXPLORE VERIFIED PARTNER CSS */
+.property-section{
+
+}
+.header h3{
+    text-transform: uppercase;
+}
+
+.header{
+    position: relative;
+}
+.header h3::after {
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    background: var(--cgc);
+    top: 45px;
+    left: 45%;
+    content: '';
+}
+
+.property img{
+    width: 100%;
+    height: 220px;
+}
+.property .card-body{
+    padding: 5px;
+    background: #e4f2f3;
+}
+.property h6{
+    font-size: 15px;
+}
+.property p{
+    font-size: 14px;
+}
+
+.view-more a{
+    font-weight: 500;
+    font-size: 15px;
+    background: var(--cgc);
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--wc);
+    transition: 0.4s;
+}
+.view-more a:hover{
+    background: var(--cxc);
+}
+/* EXPLORE VERIFIED PARTNER CSS */
+
+/* Our Services CSS */
+.service-part{
+    background: #e4f2f3;
+}
+.service-part h3{
+    text-transform: uppercase;
+}
+/* Our Services CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER SECTION*/
+footer {
+    background: #ffffff;
+    color: var(--bc);
+}
+
+.footer-box img {
+    max-width: 164px;
+    margin-bottom: 20px;
+
+}
+
+.footer-box p {
+    color: var(--bc);
+}
+
+.footer-box h6 {
+    font-weight: 700;
+    border-bottom: 1px solid var(--bgc);
+    font-size: 20px;
+}
+
+.footer-box h6 {
+    padding-bottom: 13px;
+}
+
+.footer-menu a {
+    display: block;
+    color: var(--bc);
+    padding: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-box ul li {
+    padding: 6px 0;
+}
+
+.social-media-footer h4 {
+    border-bottom: 1px solid var(--bgc);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.social-media-footer a i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: var(--cxc);
+    background: var(--wc);
+    border: 1px solid var(--cxc);
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.social-media-footer a i:hover {
+    color: var(--wc);
+    background: var(--cxc);
+}
+
+/*FOOTER SECTION END*/
+
+/*COPYRIGHT SECTION*/
+.footer-bottom{
+    background: var(--cgc);
+}
+.copyright-section p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--wc);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 22px 0;
+}
+
+/*COPYRIGHT SECTION END*/
