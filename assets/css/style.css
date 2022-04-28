@@ -38,7 +38,7 @@ header {
     text-transform: uppercase;
     display: inline-block;
     height: 35px;
-    padding: 7px 12px;
+    padding: 7px 10px;
     color: var(--cgc);
     transition: 0.4s;
 }
@@ -212,20 +212,22 @@ header {
 /*MOBILE MENU END*/
 
 /* BANNER PART CSS */
-.banner {
-    background-image: url(../img/photos/bnr-2.jpg);
+.banner-part {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 450px;
 }
-
+.banner{
+    position: relative;
+}
 .overlay {
-    background-color: #892dc2a3;
+    background-color: #892dc254;
 }
-
-.banner-content {
-    padding-top: 50px;
-    padding-bottom: 200px;
+.search-content {
+    position: absolute;
+    top: 10px;
+    right: 8%;
 }
 
 .banner-content h1 {
@@ -235,8 +237,8 @@ header {
 
 /* search bar */
 .search-bar {
-    padding: 12px 30px;
-    background: var(--wc);
+    padding: 40px 40px;
+    background: #777d8178;
     border-radius: 10px;
 }
 
@@ -246,15 +248,13 @@ header {
     font-weight: 500;
     font-size: 16px;
     color: var(--cgc);
-    line-height: 18px;
-    border: none;
-    border-right: 1.5px solid var(--bgc);
+    border: 1px solid var(--bgc);
     background-color: var(--wc);
     background-image: none;
     height: calc(3rem + 0px) !important;
-    border-radius: 0;
+    border-radius: 4px;
     outline: none;
-    padding-left: 10px;
+    padding: 8px;
 }
 
 .last-input {
