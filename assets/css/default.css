@@ -6,9 +6,7 @@
     --wc: #ffffff;
     --gc: #cccccc;
     --gb: linear-gradient(102.92deg, #1B1285 -36.3%, #643088 100%);
-
 }
-
 
 html {
     scroll-behavior: smooth;
