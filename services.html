@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | toletbook</title>
+    <!--    GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--    BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--    FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--    SLICK SLIDER-->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!--    HEADER SECTION-->
+    <header class="d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <div class="logo d-flex justify-content-between align-items-center">
+                        <a href="index.html">
+                            <img src="assets/img/logo/logo.png" alt="Logo">
+                        </a>
+                        <i class="fa fa-bars d-md-none" onClick="mobileClick()" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-9 d-none d-md-block">
+                    <div class="menubar">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="all_tolets.html">All Tolets</a></li>
+                            <li><a href="#">Verified Partner</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Create Listing</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li class="nav-item dropdown login-dropdown">
+                                <a class="nav-link login-btn" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span> Accounts &nbsp;<i class="fas fa-chevron-down"></i> </span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="">Log In</a>
+                                    <a class="dropdown-item" href="">Renter Registration</a>
+                                    <a class="dropdown-item" href="">Owner Registration</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-5">
+                <a href="index.html">
+                    <img src="assets/img/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Home
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            All Tolets
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Verified Partner
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Services
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Create Listing
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Contact Us
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accounts
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Log In</a></li>
+
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>User Registration</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Owner Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--   END MOBILE MENU-->
+
+    <!-- OUR SERVICE PART START -->
+    <section class="our-service py-lg-5">
+        <div class="container pt-3">
+            <div class="service-header text-center">
+                <h3 class="">Our All Services</h3>
+                <h5>For Any Services</h5>
+                <h6><i class="fa-solid fa-phone-volume"></i> &nbsp;&nbsp; 01234567899</h6>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img1.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">Water Tank Cleaning</h5>
+                            <h6>Varified Account: <strong>2000 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>3000 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img2.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">SURROUNDING CLEAN</h5>
+                            <h6>Varified Account: <strong>1500 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>2200 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img1.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">Water Tank Cleaning</h5>
+                            <h6>Varified Account: <strong>2000 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>3000 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img2.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">SURROUNDING CLEAN</h5>
+                            <h6>Varified Account: <strong>1500 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>2200 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img3.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">Water Tank Cleaning</h5>
+                            <h6>Varified Account: <strong>2000 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>3000 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img4.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">SURROUNDING CLEAN</h5>
+                            <h6>Varified Account: <strong>1200 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>1300 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img3.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">Water Tank Cleaning</h5>
+                            <h6>Varified Account: <strong>2000 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>3000 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img4.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">SURROUNDING CLEAN</h5>
+                            <h6>Varified Account: <strong>1200 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>1300 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img2.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">SURROUNDING CLEAN</h5>
+                            <h6>Varified Account: <strong>1500 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>2200 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img1.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">Water Tank Cleaning</h5>
+                            <h6>Varified Account: <strong>2000 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>3000 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3">
+                    <div class="card p-card">
+                        <img class="d-block text-center" src="assets/img/photos/service-img2.jpg" alt="card-img">
+                        <div class="card-body">
+                            <h5 class="mt-2 mb-3">SURROUNDING CLEAN</h5>
+                            <h6>Varified Account: <strong>1500 ৳</strong></h6>
+                            <h6>Non-Varified Account: <strong>2200 ৳</strong></h6>
+                            <li class="small-text pt-3 my-3">
+                                Lorem ipsum dolor sit amit one
+                            </li>
+                            <li class="small-text my-3">
+                                Service features one
+                            </li>
+                            <li class="small-text my-3">
+                                Lorem ipsum dolor sit amit two
+                            </li>
+                            <div class="view-btn mt-5 mb-3">
+                                <a class="" href="">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination justify-content-center mt-lg-4 py-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Service part End -->
+
+    <!-- TESTIMONIAL PART START -->
+    <section class="testimonial-part py-5 py-lg-5">
+        <div class="container coma">
+            <h3 class="text-center pb-4">Testimonial Part</h3>
+            <div class="row testimonial-slide">
+                <div class="col-12 text-center slider-item">
+                    <img class="img-fluid mx-auto user" src="assets/img/photos/testimonial.png" alt="testimonial-img">
+                    <p class="paragraph mt-4">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable. If you are
+                        going
+                        to use a passage
+                        of
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <div class="author my-4">
+                        <span class="fw-bold"> <i class="fa fa-window-minimize" aria-hidden="true"></i> Asadullah
+                            Galib</span>
+                    </div>
+                    <!-- <div class="icon">
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                    </div> -->
+                </div>
+                <div class="col-12 text-center slider-item">
+                    <img class="img-fluid mx-auto user" src="assets/img/photos/testimonial.png" alt="testimonial-img">
+                    <p class="paragraph mt-4">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable. If you are
+                        going
+                        to use a passage
+                        of
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <div class="author my-4">
+                        <span class="fw-bold"> <i class="fa fa-window-minimize" aria-hidden="true"></i> Asadullah
+                            Galib</span>
+                    </div>
+                    <!-- <div class="icon">
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                    </div> -->
+                </div>
+                <div class="col-12 text-center slider-item">
+                    <img class="img-fluid mx-auto user" src="assets/img/photos/testimonial.png" alt="testimonial-img">
+                    <p class="paragraph mt-4">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable. If you are
+                        going
+                        to use a passage
+                        of
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <div class="author my-4">
+                        <span class="fw-bold"> <i class="fa fa-window-minimize" aria-hidden="true"></i> Asadullah
+                            Galib</span>
+                    </div>
+                    <!-- <div class="icon">
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIAL PART END -->
+
+    <!--    FOOTER SECTION-->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <img src="assets/img/logo/logo.png" alt="Logo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque beatae delectus vero quod
+                            hic neque.
+                        </p>
+                        <div class="social-media-footer">
+                            <h4>Social Media</h4>
+                            <div>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>Importent Link</h6>
+
+                        <div class="footer-menu">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Our FAQ</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Help & Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>Menu Link</h6>
+
+                        <div class="footer-menu">
+                            <a href="#">Home Page</a>
+                            <a href="#">Our Properties</a>
+                            <a href="#">Varified Property</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Registration Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>About Us</h6>
+                        <p>
+                            ToletBook is Home rental Platform
+                            And Corporate Comapany
+                            Mohakhali XXXX Towers - Office No.
+                            6 - Floor 1 - Dhaka
+                        </p>
+                        <ul>
+                            <li>
+                                Phone: +88 01234567899
+                            </li>
+                            <li>
+                                Email: info@toletbook.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-bottom">
+        <div class="copyright-section">
+            <p>@Copyright-2022. All rights reserved ToletBook ltd</p>
+        </div>
+    </section>
+    <!--    FOOTER SECTION END-->
+
+
+
+    <!--    JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--    SLICK SLIDER-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--    BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Testimonial slider Autoplay
+        $('.testimonial-slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            dots: false,
+            arrows: false,
+            nextArrow: $('.nxt'),
+            prevArrow: $('.prv'),
+        });
+
+        // Banner slider part
+        $('.banner-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: false,
+            arrows: false,
+            nextArrow: $('.nxt'),
+            prevArrow: $('.prv'),
+        });
+    </script>
+
+</body>
+
+</html>

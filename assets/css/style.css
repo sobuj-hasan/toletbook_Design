@@ -9,7 +9,7 @@ header {
 }
 
 .logo img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .logo i {
@@ -30,15 +30,18 @@ header {
 
 .menubar ul li {
     display: inline-block;
+    border-left: 2px solid var(--cgc);
 }
-
+.menubar ul li:first-child{
+    border-left: none;
+}
 .menubar ul li a {
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
     display: inline-block;
-    height: 35px;
-    padding: 7px 10px;
+    height: 30px;
+    padding: 5px 8px;
     color: var(--cgc);
     transition: 0.4s;
 }
@@ -216,7 +219,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: 480px;
 }
 .banner{
     position: relative;
@@ -238,7 +241,7 @@ header {
 /* search bar */
 .search-bar {
     padding: 40px 40px;
-    background: #777d8178;
+    background: #edcfedde;
     border-radius: 10px;
 }
 
@@ -248,7 +251,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     color: var(--cgc);
-    border: 1px solid var(--bgc);
+    border: 1px solid var(--cxc);
     background-color: var(--wc);
     background-image: none;
     height: calc(3rem + 0px) !important;
@@ -256,7 +259,6 @@ header {
     outline: none;
     padding: 8px;
 }
-
 .last-input {
     border-right: none;
 }
@@ -287,9 +289,7 @@ header {
 /* BANNER PART CSS */
 
 /* EXPLORE VERIFIED PARTNER CSS */
-.property-section{
 
-}
 .header h3{
     text-transform: uppercase;
 }
@@ -306,7 +306,19 @@ header {
     left: 45%;
     content: '';
 }
-
+.img-part{
+    position: relative;
+}
+.category p {
+    font-weight: 500;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #7c007c78;
+    color: var(--wc);
+    padding: 6px 8px;
+    border-radius: 2px;
+}
 .property img{
     width: 100%;
     height: 220px;
@@ -318,8 +330,8 @@ header {
 .property h6{
     font-size: 15px;
 }
-.property p{
-    font-size: 14px;
+.property p {
+    font-size: 13px;
 }
 
 .view-more a{
@@ -376,12 +388,299 @@ header {
     line-height: 16px;
     color: var(--cxc);
 }
-
-
 /* Our Services CSS */
 
+/* TESTIMONIAL PART START */
+.testimonial-part {
+    background: #eecbd1;
+}
+.testimonial-part h3{
+    text-transform: uppercase;
+}
+.testimonial-part img{
+    width: 100px;
+    height: 100px;
+}
+.testimonial-part .coma {
+    background-image: url(../img/photos/testimonial-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.testimonial-part .coma .user {
+    min-width: 90px;
+    border: 4px solid var(--cxc);
+    border-radius: 50px;
+}
+
+.testimonial-part .coma p {
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.testimonial-part .author span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--cxc);
+}
+
+.testimonial-part .icon i {
+    font-size: 18px;
+    color: var(--cxc);
+}
+
+.testimonial-part .author span i {
+    font-size: 30px;
+}
+
+.testimonial-part .icon .active {
+    color: var(--cxc);
+}
+
+/* TESTIMONIAL PART END */
 
 
+/* SHOW OUR ALL TOLETS PART START */
+.all-tolets{
+    background: #eecbd1;
+}
+/* SHOW OUR ALL TOLETS PART END */
+
+
+/* Our Service page CSS START */
+.pagination {
+    font-weight: 500;
+    font-size: 15px;
+    outline: none;
+}
+.page-link {
+    padding: 10px 15px;
+}
+/* Our Service page CSS END */
+
+/* Contact Us Page CSS Start */
+.about-contact {
+    background: #ede2e2;
+}
+
+.about-contact .form-label {
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.map {
+    background: #FAFAFA;
+}
+
+.address .section-content h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--bc);
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 10px;
+}
+
+.address .section-content p {
+    color: var(--bc);
+    font-weight: 500;
+}
+
+.address .contact h4 {
+    color: var(--bc);
+}
+
+.address .contact {
+    background: #f2fbff7a;
+    box-shadow: 10px 10px 20px -7px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.address .contact button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--wc);
+    background: var(--cxc);
+    border-radius: 7px;
+    border: none;
+    padding: 13px 35px;
+    margin-top: 30px;
+}
+
+.form-control {
+    border: 1px solid var(--wc);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 52px;
+    box-shadow: 5px 5px 10px 0px #00000026;
+}
+
+.map h4 {
+    color: var(--pc);
+}
+/* Contact Us Page CSS End */
+
+/* LOG IN REGISTER PAGE START */
+.vendor-signup{
+    background: #e1dfdf;
+}
+.login {
+    background: #faf4f4;
+    border-radius: 7px;
+}
+.login-section span{
+    font-weight: 500;
+    font-size: 15px;
+}
+.login-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 22px;
+}
+
+.vendor-signup .login-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.login-section h4 {
+    font-weight: 600;
+    color: var(--bc);
+}
+
+.login-section p {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--bc);
+}
+
+.login-section .form-control {
+    border: 1px solid var(--cxc);
+    background: #f4f4f4;
+    height: 50px;
+    box-shadow: none !important;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--xgc);
+    padding-left: 12%;
+}
+
+.login-section input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: #B0B0B0;
+    line-height: 19px;
+    padding-left: 0%;
+}
+
+.vendor-signup .form-control {
+    border: 1px solid #CCCCCC;
+    background: #f4f4f4;
+    height: 50px;
+    box-shadow: none !important;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--xgc);
+    padding-left: 4%;
+}
+
+.login-section .login {
+    position: relative;
+}
+
+.login-section .login img {
+    position: absolute;
+    top: 13px;
+    left: 7px;
+}
+
+.login-section label {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--xgc);
+    line-height: 19px;
+}
+
+.login-section .text-form {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--xgc);
+    line-height: 19px;
+}
+
+.login-section button {
+    background: var(--cxc);
+    border: none;
+    height: 50px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--wc);
+}
+
+.login-section a {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--xgc);
+}
+
+/* register section */
+.register-section {
+    background-image: url(../img/photos/sign-up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.register-section h4 {
+    font-weight: 600;
+    color: var(--wc);
+    padding-top: 82%;
+}
+
+.sign-up-btn {
+    width: 85%;
+    background: var(--cxc);
+    margin-left: 8%;
+}
+
+.sign-up-btn li {
+    margin: 15px 4px;
+}
+
+.sign-up-btn li a i {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid var(--bgc);
+    color: var(--bgc);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.sign-up-btn li a i:hover {
+    background: var(--bgc);
+    border: 1px solid var(--bgc);
+    color: var(--wc);
+}
+
+.sign-up-page .register-section h4 {
+    padding-top: 123%;
+}
+
+/* LOG IN REGISTER PAGE END */
 
 
 
@@ -425,9 +724,8 @@ footer {
 }
 
 .footer-box img {
-    max-width: 164px;
-    margin-bottom: 20px;
-
+    max-width: 230px;
+    margin-bottom: 30px;
 }
 
 .footer-box p {
